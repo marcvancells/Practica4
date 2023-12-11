@@ -22,3 +22,9 @@ void main (){
 	if (unlink(nom) == -1)
 		perror("Error en el esborrar");
 }
+
+
+
+
+
+
