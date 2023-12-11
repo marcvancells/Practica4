@@ -17,5 +17,8 @@ void main (){
 		if(write(fd1,buf,num)<0)
 			perror("Error en el write");
 		}
-	int unlink(const char *nom);
+	close(fd);
+	close(fd1);
+	if (unlink(nom) == -1)
+		perror("Error en el esborrar");
 }
